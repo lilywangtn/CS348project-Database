@@ -12,7 +12,7 @@ CREATE TABLE `users` (
 );
 
 CREATE TABLE `permit_holders` (
-	`uid` INT NOT NULL,
+    `uid` INT NOT NULL,
     `type` CHAR(20) NOT NULL,
     `start_time` TIME NOT NULL,
     `end_time` TIME NOT NULL,
@@ -22,7 +22,7 @@ CREATE TABLE `permit_holders` (
 );
 
 CREATE TABLE `lots` (
-	`lid` INT NOT NULL AUTO_INCREMENT,
+    `lid` INT NOT NULL AUTO_INCREMENT,
     `area` CHAR(2) NOT NULL,
     `address` VARCHAR(64) NOT NULL,
     `lot_name` VARCHAR(50) NOT NULL,
@@ -32,7 +32,7 @@ CREATE TABLE `lots` (
 );
 
 CREATE TABLE `spots` (
-	`lid` INT NOT NULL,
+    `lid` INT NOT NULL,
     `sid` INT NOT NULL,
     `parking_type` CHAR(20) NOT NULL,
     `latitude` VARCHAR(50) NOT NULL,
